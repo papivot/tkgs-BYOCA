@@ -15,9 +15,9 @@ Steps
 ```bash
 openssl genrsa -out tls.key 2048
 ```
-3. Create the CA cert using the configuration saved in the `ca.crt.tempate` file.
+3. Create the CA cert using the configuration saved in the `ca.crt.template` file.
 ```bash
-openssl req -x509 -new -nodes -key tls.key -sha256 -days 3650 -out tls.crt -config ca.crt.tempate
+openssl req -x509 -new -nodes -key tls.key -sha256 -days 3650 -out tls.crt -config ca.crt.template
 ```
 4. Validate the CA cert (optional)
 ```bash
